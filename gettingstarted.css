@@ -1,0 +1,44 @@
+/* Block: gettingstarted */
+.getting__started {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Agar elemen anak ditumpuk secara vertikal */
+    justify-content: flex-start; /* Mulai dari bagian atas */
+    align-items: center; /* Memusatkan secara horizontal */
+    height: 100vh; 
+    width: 100vw; 
+    padding: 50px 0; /* Tambahkan padding di bagian atas untuk mengatur jarak */
+    box-sizing: border-box;
+}
+
+.getting__started-content-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan secara vertikal */
+    align-items: center; /* Pusatkan secara horizontal */
+    position: relative;
+    border-radius: 13px;
+    background: #0D28A6;
+    width: 1168px;
+    height: 326px; 
+    top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.getting__started-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin-top: -20px;
+}
+
+
+.getting__started-deksripsi {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    width: 468px;
+    margin-top: 20px; /* Beri sedikit jarak antara judul dan deskripsi */
+}

@@ -1,0 +1,67 @@
+/* Block: testimoni */
+.testimoni {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Agar elemen anak ditumpuk secara vertikal */
+    justify-content: flex-start; /* Mulai dari bagian atas */
+    align-items: center; /* Memusatkan secara horizontal */
+    height: 100vh; 
+    width: 100vw; 
+    padding: 50px 0; /* Tambahkan padding di bagian atas untuk mengatur jarak */
+    box-sizing: border-box;
+}
+
+.testimoni__content{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center; /* Memastikan teks di dalam content berada di tengah */
+}
+
+.testimoni__content-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.testimoni__content-deskripsi{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Hilangkan ikon default Bootstrap */
+}
+
+.custom-icon {
+    width: 57px; /* Sesuaikan ukuran ikon */
+    height: 68px;
+    object-fit: contain; /* Pastikan gambar tidak terdistorsi */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Sesuaikan posisi prev icon */
+}
+
+.carousel-control-next {
+    right: 10px; /* Sesuaikan posisi next icon */
+}
+
+@media (max-width: 768px) {
+    .custom-icon {
+        width: 30px; /* Kurangi ukuran di perangkat mobile */
+        height: 30px;
+    }
+
+    .carousel-control-prev {
+        left: 5px; /* Posisi di perangkat kecil */
+    }
+
+    .carousel-control-next {
+        right: 5px;
+    }
+}
+

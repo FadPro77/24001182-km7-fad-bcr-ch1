@@ -1,0 +1,145 @@
+/* Block: why */
+.why {
+    background-color: #f4f4f4;
+    display: flexbox;
+    align-items: center; 
+    height: 100vh; 
+    width: 100vw; 
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.why__content {
+    position: relative;
+    top: 180px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.why__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 125px;
+}
+
+.why__description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 125px;
+}
+
+/* Element: why__cards */
+.why__cards {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus card ke baris baru jika perlu */
+    gap: 20px; /* Jarak antara card */
+    justify-content: center; /* Memusatkan card secara horizontal */
+    margin-left: 30px;
+    position: relative;
+    top: 225px;
+}
+
+/* Element: card */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    width: 220px;
+    height: 150px;
+    radius: 8px;
+    gap: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada card */
+    text-align: left; /* Menyelaraskan teks ke kiri */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+
+.card__text {
+    font-weight: 300;
+    font-size: 14px;
+    width: 220px;
+}
+
+.why__lengkap-background{
+    border-radius: 50%;
+    background: #F9CC00;
+    width: 32px;
+    height: 32px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.why__lengkap-logo{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.why__murah-background{
+    border-radius: 50%;
+    background: #FA2C5A;
+    width: 32px;
+    height: 32px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.why__murah-logo{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.why__layanan-background{
+    border-radius: 50%;
+    background: #0D28A6;
+    width: 32px;
+    height: 32px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.why__layanan-logo{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.why__sopir-background{
+    border-radius: 50%;
+    background: #5CB85F;
+    width: 32px;
+    height: 32px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.why__sopir-logo{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
