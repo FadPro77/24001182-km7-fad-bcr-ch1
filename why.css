@@ -1,45 +1,29 @@
 /* Block: why */
 .why {
     background-color: #f4f4f4;
-    display: flexbox;
-    align-items: center; 
-    height: 100vh; 
-    width: 100vw; 
-    padding: 0 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
     box-sizing: border-box;
 }
 
-.why__content {
-    position: relative;
-    top: 180px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-}
-
+/* Element: why__content */
 .why__title {
+    color: black;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    margin-left: 125px;
+    font-size: 36px;
+    line-height: 42px;
 }
 
 .why__description {
+    color: black;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    margin-left: 125px;
-}
-
-/* Element: why__cards */
-.why__cards {
-    display: flex;
-    flex-wrap: wrap; /* Membungkus card ke baris baru jika perlu */
-    gap: 20px; /* Jarak antara card */
-    justify-content: center; /* Memusatkan card secara horizontal */
-    margin-left: 30px;
-    position: relative;
-    top: 225px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
 }
 
 /* Element: card */
@@ -48,98 +32,140 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 24px;
-    width: 220px;
-    height: 150px;
-    radius: 8px;
-    gap: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada card */
-    text-align: left; /* Menyelaraskan teks ke kiri */
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px; 
 }
 
-.card__title {
+/* Card Title */
+.card-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 10px;
-
+    margin-top: 0; 
 }
 
-.card__text {
+/* Card Text */
+.card-text {
     font-weight: 300;
     font-size: 14px;
+    line-height: 20px;
     width: 220px;
 }
 
+/* Icon Background */
 .why__lengkap-background{
     border-radius: 50%;
-    background: #F9CC00;
-    width: 32px;
-    height: 32px; 
-    position: relative;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.why__lengkap-logo{
-    width: 20px;
-    height: 20px;
-    position: absolute;
+    margin-left: 15px;
+    background-color:#F9CC00;
 }
 
 .why__murah-background{
     border-radius: 50%;
-    background: #FA2C5A;
-    width: 32px;
-    height: 32px; 
-    position: relative;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.why__murah-logo{
-    width: 20px;
-    height: 20px;
-    position: absolute;
+    margin-left: 15px;
+    background-color:#FA2C5A;
 }
 
 .why__layanan-background{
     border-radius: 50%;
-    background: #0D28A6;
-    width: 32px;
-    height: 32px; 
-    position: relative;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    background-color:#0D28A6;
 }
 
-.why__layanan-logo{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-}
-
-.why__sopir-background{
+.why__sopir-background {
     border-radius: 50%;
-    background: #5CB85F;
-    width: 32px;
-    height: 32px; 
-    position: relative;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    background-color:#5CB85F;
 }
 
-.why__sopir-logo{
-    width: 20px;
-    height: 20px;
-    position: absolute;
+/* Icons */
+.why__lengkap-logo,
+.why__murah-logo,
+.why__layanan-logo,
+.why__sopir-logo {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 768px) {
+    .why__title {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .why__description {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .card {
+        width: 300px; /* Ukuran kartu pada perangkat mobile */
+        height: 150px;
+        display: flex;
+        align-items: start;
+        text-align: left; /* Ubah ke left untuk teks pada mobile */
+        padding: 20px;
+    }
+
+    .card-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: -20px; /* Menambahkan margin kiri untuk memindahkan judul ke kiri */
+        margin-top: -20px;
+    }
+
+    .card-text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: -20px;
+        margin-top: 10px;
+        width: 280px;
+    }
+
+    .why__lengkap-background,
+    .why__layanan-background,
+    .why__murah-background,
+    .why__sopir-background
+    {
+        margin-left: -5px;
+        margin-bottom: 0;
+        width: 32px;
+        height: 32px;
+    }
+
+    .why__layanan-logo,
+    .why__lengkap-logo,
+    .why__murah-logo,
+    .why__sopir-logo{
+        width: 20px;
+        height: 20px;
+    }
 }

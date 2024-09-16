@@ -2,66 +2,140 @@
 .testimoni {
     background-color: #f4f4f4;
     display: flex;
-    flex-direction: column; /* Agar elemen anak ditumpuk secara vertikal */
-    justify-content: flex-start; /* Mulai dari bagian atas */
-    align-items: center; /* Memusatkan secara horizontal */
-    height: 100vh; 
-    width: 100vw; 
-    padding: 50px 0; /* Tambahkan padding di bagian atas untuk mengatur jarak */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
-.testimoni__content{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    text-align: center; /* Memastikan teks di dalam content berada di tengah */
-}
-
-.testimoni__content-title{
+.testimoni__content-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.testimoni__content-deskripsi{
+.testimoni__content-deskripsi {
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    color: black;
 }
 
+/* Mengatur ukuran carousel */
+.carousel {
+    width: 100%;
+    max-width: 832px; /* Batas maksimal lebar carousel */
+    height: 270px; /* Mengatur tinggi tetap */
+    margin: 0 auto; /* Centering carousel secara horizontal */
+    position: relative; /* Untuk posisi absolut pada ikon navigasi */
+}
 
+.carousel-item {
+    height: 100%; /* Mengatur tinggi item carousel agar sesuai dengan parent */
+    margin-top: 50px;
+}
+
+.profile-testimonial {
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 100px;
+}
+
+.rate-testimonial {
+    width: 100px;
+    height: auto; 
+}
+
+/* Mengatur tinggi dan lebar dari bagian review */
+.review-testimonial {
+    max-width: 415px;
+    height: 80px; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.review-alamat-testimonial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+}
+
+/* Carousel Navigation Icon Adjustments */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: none; /* Hilangkan ikon default Bootstrap */
+    background-image: none; 
 }
 
 .custom-icon {
-    width: 57px; /* Sesuaikan ukuran ikon */
+    width: 57px; /* Adjust icon size */
     height: 68px;
-    object-fit: contain; /* Pastikan gambar tidak terdistorsi */
+    object-fit: contain;
 }
 
 .carousel-control-prev {
-    left: 10px; /* Sesuaikan posisi prev icon */
+    left: 5px;
 }
 
 .carousel-control-next {
-    right: 10px; /* Sesuaikan posisi next icon */
+    right: 5px;
 }
 
+/* Responsiveness */
 @media (max-width: 768px) {
+    .carousel {
+        height: 400px; /* Mengatur tinggi carousel lebih kecil untuk layar kecil */
+    }
+
+    .profile-testimonial {
+        width: 100px; /* Mengurangi lebar gambar profil di layar kecil */
+        height: 100px;
+    }
+
+    .rate-testimonial {
+        width: 80px; /* Mengurangi lebar rating di layar kecil */
+    }
+
+    .review-testimonial {
+        max-width: 300px; /* Lebar maksimal teks review di layar kecil */
+    }
+
     .custom-icon {
-        width: 30px; /* Kurangi ukuran di perangkat mobile */
+        width: 30px;
         height: 30px;
     }
 
     .carousel-control-prev {
-        left: 5px; /* Posisi di perangkat kecil */
+        left: 5px;
+        margin-bottom: 180px;
     }
 
     .carousel-control-next {
         right: 5px;
+        margin-bottom: 180px;
+    }
+
+    /* Stack images and text vertically on smaller screens */
+    .carousel-item .row {
+        flex-direction: column;
+        text-align: center; /* Center content on small screens */
+    }
+
+    .profile-testimonial{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .rate-testimonial {
+        margin-bottom: 20px;
     }
 }
-
