@@ -4,11 +4,11 @@
     top: 0;
     left: 0;
     right: 0;
-    height: auto; /* Biarkan tinggi auto agar kolaps dengan baik */
+    height: auto;
     box-sizing: border-box;
     padding: 0;
     z-index: 1000;
-    margin-top: 0; /* Hapus margin-top dari navbar */
+    margin-top: 0;
 }
 
 

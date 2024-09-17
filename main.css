@@ -55,25 +55,25 @@
     left: 0;
     width: 140px;
     height: 36px;
-    opacity: 0; /* Hapus tombol dari tampilan tetapi tetap bisa diklik */
+    opacity: 0; 
 }
 
 /* Element: main__img */
 .main__img {
-    position: absolute; /* Posisi absolut untuk menempatkan gambar di sudut kanan bawah */
+    position: absolute;
     bottom: 0;
     right: 0;
-    width: 850px; /* Atur lebar maksimum gambar, bisa disesuaikan */
-    height: 500px; /* Menjaga rasio aspek gambar */
-    object-fit: cover; /* Pastikan gambar memenuhi area tanpa mengubah rasio aspek */
+    width: 850px; 
+    height: 500px;
+    object-fit: cover; 
 }
 
 @media (max-width: 768px) {
     .main {
-        flex-direction: column; /* Stack content vertically on small screens */
+        flex-direction: column;
         justify-content: flex-start;
-        padding: 20px 0; /* Tambah jarak atas-bawah */
-        padding-top: 0; /* Hapus padding-top untuk layar kecil */
+        padding: 20px 0;
+        padding-top: 0;
     }
 
     .main__title {
@@ -89,7 +89,7 @@
     }
 
     .main__img {
-        margin-top: 20px; /* Tambah jarak atas untuk gambar */
+        margin-top: 20px; 
         width: 300px;
         height: 175px;
         object-fit: fill;

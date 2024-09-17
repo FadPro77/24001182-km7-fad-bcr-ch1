@@ -78,7 +78,7 @@
 }
 
 .custom-icon {
-    width: 57px; /* Adjust icon size */
+    width: 57px;
     height: 68px;
     object-fit: contain;
 }
@@ -94,11 +94,11 @@
 /* Responsiveness */
 @media (max-width: 768px) {
     .carousel {
-        height: 400px; /* Mengatur tinggi carousel lebih kecil untuk layar kecil */
+        height: 400px; 
     }
 
     .profile-testimonial {
-        width: 100px; /* Mengurangi lebar gambar profil di layar kecil */
+        width: 100px; 
         height: 100px;
     }
 
@@ -108,8 +108,8 @@
 
     .review-testimonial {
         max-width: 100%;
-        text-align: start; /* Ubah dari start ke center */
-        margin: 0 auto; /* Memastikan elemen berada di tengah */
+        text-align: start; 
+        margin: 0 auto;
         margin-bottom: 25px;
     }
 

@@ -1,10 +1,10 @@
 /* Block: services */
 .services {
     background-color: #f4f4f4;
-    min-height: 100vh; /* Pastikan section tidak melebihi tinggi viewport */
+    min-height: 100vh; 
     display: flex;
     align-items: center;
-    padding: 50px 0; /* Tambah padding untuk menyesuaikan jarak */
+    padding: 50px 0; 
 }
 
 /* Element: services__image */
@@ -78,16 +78,16 @@
 
 @media (max-width: 768px) {
     .services {
-        flex-direction: column; /* Stack content vertically on small screens */
+        flex-direction: column; 
         justify-content: flex-start;
     }
 
     .services__image {
-        margin-bottom: 0; /* Jarak antar gambar dan konten */
+        margin-bottom: 0;
     }
 
     .services__title {
-        font-size: 24px; /* Kurangi ukuran font di layar kecil */
+        font-size: 24px;
         line-height: 36px;
         margin-top: 0;
         
@@ -99,7 +99,7 @@
     }
 
     .services__img {
-        height: 228px; /* Kurangi tinggi gambar agar muat di layar kecil */
+        height: 228px; 
         width: 252px;
     }
 }

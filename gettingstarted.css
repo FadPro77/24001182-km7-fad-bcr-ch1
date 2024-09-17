@@ -18,7 +18,7 @@
     border-radius: 13px;
     background: #0D28A6;
     width: 100%;
-    max-width: 1168px; /* Maksimum lebar konten */
+    max-width: 1168px;
     height: 326px;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +38,7 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
-    max-width: 468px; /* Menjaga lebar teks agar tidak terlalu lebar */
+    max-width: 468px;
     margin-top: 20px;
 }
 
