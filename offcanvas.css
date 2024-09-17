@@ -1,8 +1,9 @@
-
-  
-  .offcanvas {
-    width: 100px; /* Atur lebar keseluruhan offcanvas */
-  } 
-
-  
+@media (max-width: 768px) {
+    .offcanvas.offcanvas-end {
+      width: 50%; /* Lebar offcanvas menjadi 50% dari lebar layar */
+    }
+    .offcanvas-body {
+      padding: 0.5rem; /* Mengatur padding konten dalam sidebar */
+    }
+  }
   
