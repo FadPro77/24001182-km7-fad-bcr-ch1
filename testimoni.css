@@ -30,14 +30,14 @@
 /* Mengatur ukuran carousel */
 .carousel {
     width: 100%;
-    max-width: 832px; /* Batas maksimal lebar carousel */
-    height: 270px; /* Mengatur tinggi tetap */
-    margin: 0 auto; /* Centering carousel secara horizontal */
-    position: relative; /* Untuk posisi absolut pada ikon navigasi */
+    max-width: 832px; 
+    height: 270px;
+    margin: 0 auto;
+    position: relative; 
 }
 
 .carousel-item {
-    height: 100%; /* Mengatur tinggi item carousel agar sesuai dengan parent */
+    height: 100%; 
     margin-top: 50px;
 }
 
@@ -103,11 +103,18 @@
     }
 
     .rate-testimonial {
-        width: 80px; /* Mengurangi lebar rating di layar kecil */
+        width: 80px;
     }
 
     .review-testimonial {
-        max-width: 300px; /* Lebar maksimal teks review di layar kecil */
+        max-width: 100%;
+        text-align: start; /* Ubah dari start ke center */
+        margin: 0 auto; /* Memastikan elemen berada di tengah */
+        margin-bottom: 25px;
+    }
+
+    .review-alamat-testimonial{
+        text-align: start;
     }
 
     .custom-icon {
@@ -128,13 +135,14 @@
     /* Stack images and text vertically on smaller screens */
     .carousel-item .row {
         flex-direction: column;
-        text-align: center; /* Center content on small screens */
+        text-align: center;
     }
 
-    .profile-testimonial{
+    .profile-testimonial {
         margin-left: 0;
         margin-bottom: 20px;
     }
+
     .rate-testimonial {
         margin-bottom: 20px;
     }
