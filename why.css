@@ -125,7 +125,7 @@
     }
 
     .card {
-        max-width: 375px;
+        width: 375px;
         height: 150px;
         display: flex;
         align-items: start;
