@@ -1,5 +1,8 @@
-.offcanvas-end {
-    /* Pastikan offcanvas berada di sisi kanan */
-    right: 0;
-  }
+
+  
+  .offcanvas {
+    width: 100px; /* Atur lebar keseluruhan offcanvas */
+  } 
+
+  
   
